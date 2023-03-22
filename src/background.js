@@ -1,4 +1,4 @@
-let number_points = 50;
+let number_points;
 let points = [];
 let velocity = [];
 var canvas;
@@ -14,10 +14,7 @@ function setup() {
     canvas.position(0, 0);
     canvas.style('z-index', '-1'); // Set canvas behind other elements
 
-    const isMobile = window.matchMedia("only screen and (max-width: 768px)").matches;
-    if (isMobile) {
-        number_points = 5;
-    }
+    number_points = windowWidth / 100; // Number of points depends on window width
 
     // Initialize random points and velocities
     for (let i = 0; i < number_points; i++) {
