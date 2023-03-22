@@ -23,6 +23,8 @@ body {
     margin: 3%;
     font-family: monospace;
     font-size:0.9vw;
+    border: 1px solid black;
+    filter: drop-shadow(0 0 10px #000000);
 }
 
 .box-img {
