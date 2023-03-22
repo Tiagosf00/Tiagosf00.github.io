@@ -5,15 +5,19 @@ var canvas;
 
 // Resize canvas when window is resized
 function windowResized() {
-    resizeCanvas(windowWidth+1, windowHeight+1);
-    canvas.position(-1, -1);
+    resizeCanvas(windowWidth, windowHeight);
+    canvas.position(0, 0);
 }
 
 function setup() {
-    canvas = createCanvas(windowWidth+1, windowHeight+1);
-    canvas.position(-1, -1);
+    canvas = createCanvas(windowWidth, windowHeight);
+    canvas.position(0, 0);
     canvas.style('z-index', '-1'); // Set canvas behind other elements
-    
+
+    if (windowWidth < 768) { // Reduce number of points on mobile devices
+        number_points = 15;
+    }
+
     // Initialize random points and velocities
     for (let i = 0; i < number_points; i++) {
         points.push([random(0, width), random(0, height)]);
