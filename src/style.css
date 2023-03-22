@@ -14,14 +14,13 @@ body {
 }
 
 .box {
-    height: 83%;
     width: 40%;
     background-color: rgb(14, 23, 47);
     border-radius: 5px;
     padding: 2%;
     text-align: center;
     color: white;
-    margin: 2%;
+    margin: 3%;
     font-family: monospace;
     font-size:0.9vw;
 }

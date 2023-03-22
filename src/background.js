@@ -14,8 +14,9 @@ function setup() {
     canvas.position(0, 0);
     canvas.style('z-index', '-1'); // Set canvas behind other elements
 
-    if (windowWidth < 768) { // Reduce number of points on mobile devices
-        number_points = 15;
+    const isMobile = window.matchMedia("only screen and (max-width: 768px)").matches;
+    if (isMobile) {
+        number_points = 5;
     }
 
     // Initialize random points and velocities
