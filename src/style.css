@@ -33,3 +33,19 @@ body {
     border-radius: 50%;
     margin: 20px;
 }
+
+a:link {
+    color: rgb(88, 194, 255);
+}
+/* visited link */
+a:visited {
+    color: rgb(88, 194, 255);
+}
+/* mouse over link */
+a:hover {
+    color: rgb(79, 79, 255);
+}
+/* selected link */
+a:active {
+    color: rgb(79, 79, 255);
+}
