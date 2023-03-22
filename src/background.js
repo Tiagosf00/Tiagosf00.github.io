@@ -44,7 +44,7 @@ function draw() {
     }
     
     // Show points
-    fill(170);
+    fill(255);
     for (let i = 0; i < points.length; i++) {
         [x, y] = points[i];
         ellipse(x, y, 5);
