@@ -15,20 +15,22 @@ body {
 
 .box {
     width: 40%;
+    height: min-content;
     background-color: rgb(14, 23, 47);
     border-radius: 5px;
     padding: 2%;
+    padding-bottom: 1%;
     text-align: center;
     color: white;
     margin: 3%;
     font-family: monospace;
     font-size:0.9vw;
-    border: 1px solid black;
-    filter: drop-shadow(0 0 10px #000000);
+    border: 1px solid rgb(0, 0, 0);
+    filter: drop-shadow(0 0 10px #00021a);
 }
 
 .box-img {
-    width: 35%;
+    width: 45%;
     float: right;
     height: auto;
     text-align: right;
